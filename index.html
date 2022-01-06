@@ -41,5 +41,22 @@
           </div>  
     </div>
     <!-- restaurant-section end -->
+    <div>
+		<script>
+			function sayHello() {
+				let newDiv = document.createElement("div");
+				let form1 = document.getElementById("form-1");
+				let userName = form1.elements[0].value;
+				newDiv.innerHTML = "Hello " + userName;
+	
+				document.body.appendChild(newDiv);
+			}
+		</script>
+		<form id="form-1" action="" onsubmit=sayHello()>
+			Name: <input type="text" name = "name">
+			<button type = button id="button-2" onclick="sayHello()">click me to say hi</button>
+		</form>
+	</div>
+
     </body>
 </html>
